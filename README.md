@@ -4,8 +4,8 @@ Un site vitrine simple, professionnel et performant pour présenter vos activit�
 
 ## Contenu
 
-- **Prestashop**: bugs, modules, mise à jour, performance, intégrations, sécurité.
-- **Autres services**: Laravel, Django, Python, scrapping, assistance à distance, conseil.
+- **Prestashop** : bugs, modules, mises à jour, performance, intégrations, sécurité.
+- **Autres services** : Laravel, Django, Python, scraping, assistance à distance, conseil.
 - **Processus**: de la prise de brief à la livraison.
 - **Formulaire**: Contact & Devis avec validation côté client et protections anti‑spam (honeypot, question, délai minimal).
 
@@ -30,7 +30,7 @@ Un site vitrine simple, professionnel et performant pour présenter vos activit�
     $env:SBO_CONTACT_FROM = "no-reply@votre-domaine.com"
     ```
   - Sans variables, modifiez directement les constantes en haut de `contact.php`.
-- Anti‑spam côté serveur: honeypot, question (3+2), délai minimal (3s) entre affichage et soumission.
+- Anti‑spam côté serveur: honeypot, question (3+2), délai minimal (3 s) entre affichage et soumission.
 - En cas d'échec de `mail()`, un fallback écrit dans `storage/messages.log` (créé automatiquement). Vous pouvez consulter ce fichier pour vérifier la réception.
 
 ### Alternative sans PHP (Formspree)
@@ -43,7 +43,7 @@ Si vous déployez sur un hébergement statique (Netlify/Vercel/GitHub Pages), re
 
 ## Personnalisation rapide
 
-- **Texts**: éditez les sections dans `index.html` (langue FR par défaut).
+- **Textes** : éditez les sections dans `index.html` (langue FR par défaut).
 - **Couleurs**: changez la palette `brand` dans le bloc `tailwind.config` en haut du fichier.
 - **SEO**: mettez à jour `<title>`, `meta description`, et les balises Open Graph/Twitter.
 - **JSON‑LD**: ajustez les blocs `Organization` et `Service` si besoin.
@@ -55,4 +55,4 @@ Si vous déployez sur un hébergement statique (Netlify/Vercel/GitHub Pages), re
 
 ## Licence
 
-Vous êtes libre d'utiliser et modifier ce template pour vos besoins.
+Vous êtes libre d'utiliser et de modifier ce modèle pour vos besoins.

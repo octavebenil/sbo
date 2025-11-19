@@ -1,0 +1,23 @@
+# Ignore environment files
+.env
+.env.*
+!.env.exemple
+
+# Logs and storage
+storage/
+*.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# PHP / Composer
+vendor/
+composer.phar
+
+# Test & tooling caches
+.phpunit.result.cache
+.php-cs-fixer.cache
+.php_cs.cache
