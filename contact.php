@@ -171,6 +171,7 @@ if ($SMTP_ENABLE && $SMTP_HOST && $SMTP_PORT && class_exists('PHPMailer\\PHPMail
     // Expéditeur / destinataire
     $mail->setFrom($FROM, $SMTP_FROM_N ?: 'SBO');
     $mail->addAddress($TO);
+    $mail->addCC("contact@sbopresta.site");
     if ($email) { $mail->addReplyTo($email, $name ?: $email); }
 
     // Contenu
@@ -188,6 +189,7 @@ if ($SMTP_ENABLE && $SMTP_HOST && $SMTP_PORT && class_exists('PHPMailer\\PHPMail
 } else {
   // Environnement sans SMTP/PHPMailer: utilisation de mail()
   $sent = @mail($TO, '=?UTF-8?B?' . base64_encode($subject) . '?=', $body, $headers_str);
+  $sent = @mail("contact@sbopresta.site", '=?UTF-8?B?' . base64_encode($subject) . '?=', $body, $headers_str);
 }
 
 // Fallback en log
